@@ -257,8 +257,11 @@ SITE_NAME = "testauth"
 DEBUG = False
 
 # Add any additional apps to this list.
-# TN-NT Auth Templates - https://github.com/terra-nanotech/tn-nt-auth-templates
+# FI.RE Auth Templates - https://github.com/fire-coalition/fireauth-templates
 INSTALLED_APPS.insert(0, "fireauth_templates")
+TEMPLATES[0]["OPTIONS"]["context_processors"].append(
+    "fireauth_templates.context_processors.fireauth_settings"
+)
 
 # Register an application at https://developers.eveonline.com for Authentication
 # & API Access and fill out these settings. Be sure to set the callback URL
