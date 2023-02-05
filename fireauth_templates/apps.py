@@ -1,5 +1,5 @@
 """
-TN-NT Templates app config
+FI.RE Auth Templates app config
 """
 
 # Django
