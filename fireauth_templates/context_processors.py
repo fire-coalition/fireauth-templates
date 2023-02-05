@@ -14,7 +14,7 @@ def fireauth_settings(request: WSGIRequest) -> dict:
     :return:
     """
 
-    # AA logo
+    # Template Settings
     return_value = {
         "FIREAUTH_TEMPLATE_AA_LOGO": "/static/fireauth_templates/images/fire-coalition-32x32.png",
         "REGISTRATION_VERIFY_EMAIL": getattr(
