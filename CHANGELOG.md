@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Templates for `fittings` module
 - Favicons
+- React to `REGISTRATION_VERIFY_EMAIL` in registration template
