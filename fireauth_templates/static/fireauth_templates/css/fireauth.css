@@ -1,0 +1,5 @@
+.img-circle,
+.top-user-menu .user-main-character-avatar img.ra-avatar,
+img {
+    border-radius: 6px;
+}
