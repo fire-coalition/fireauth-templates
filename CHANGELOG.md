@@ -12,5 +12,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Templates for `fittings` module
 - Templates for `blacklist` module
+- Templates for `mumbletemps` module
 - Favicons
 - React to `REGISTRATION_VERIFY_EMAIL` in registration template
