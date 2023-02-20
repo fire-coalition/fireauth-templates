@@ -5,6 +5,11 @@
         border-radius: 6px;
     }
 
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
     code {
         font-family: "Fira Code", monospace;
     }
