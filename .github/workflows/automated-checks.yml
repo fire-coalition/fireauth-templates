@@ -35,7 +35,7 @@ jobs:
 
   # Run Test Coverage
   test-coverage-aa-stable:
-    needs: [ pre-commit ]
+    needs: [pre-commit]
     name: AA Latest (Python ${{ matrix.python-version }}, Django ${{ matrix.django-version }} with ${{ matrix.database }})
     runs-on: ubuntu-latest
 
@@ -226,11 +226,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
 
-      # Minimum supported Python version by AllianceAuth
-      - name: Set up Python 3.8
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8
+          python-version: '3.8' # Minimum supported Python version by AllianceAuth
 
       - name: Install Tools
         run: |
