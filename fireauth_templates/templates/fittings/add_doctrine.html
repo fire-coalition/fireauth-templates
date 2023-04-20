@@ -72,14 +72,14 @@
 
                             <div class="form-group">
                                 <label for="fitSelect" class="col-sm-2 control-label">
-                                    {% translate "Select Fittings" %}
+                                    {% translate "Select Fit" %}
                                 </label>
 
                                 <div class="col-sm-10" style="margin-top: 5px; margin-bottom: 5px;">
                                     <select multiple="multiple" id="fitSelect" name="fitSelect">
                                         {% for fit in fittings %}
                                             <option value="{{ fit.pk }}">
-                                                {{ fit.name }} ({{fit.ship_type.name}})
+                                                {{ fit.name }} ({{ fit.ship_type.name }})
                                             </option>
                                         {% endfor %}
                                     </select>
@@ -101,7 +101,7 @@
                                     </select>
 
                                     <span id="helpBlock" class="help-block">
-                                        {% translate "If you do not see the ship type that you would like to use for the icon, add a fitting that uses that ship type and try again." %}
+                                        {% translate "If you do not see the ship type that you would like to use for the icon, add a fit that uses that ship type and try again." %}
                                     </span>
                                 </div>
                             </div>

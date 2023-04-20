@@ -5,7 +5,7 @@
 {% load filters %}
 {% load evelinks %}
 
-{% block page_title %}{% translate "View All Fittings" %}{% endblock %}
+{% block page_title %}{% translate "View All Fits" %}{% endblock %}
 
 {% block fittings_block %}
     {% if msg %}
@@ -30,17 +30,17 @@
 
     <div>
         <h2>
-            {% translate "Fittings List" %}
+            {% translate "Fit List" %}
         </h2>
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <div class="panel-title">{% translate "Fittings" %}</div>
+                <div class="panel-title">{% translate "Fits" %}</div>
             </div>
 
             <div class="panel-body">
                 {% if not fits %}
-                    <div class="alert alert-warning text-center">{% translate "No Fittings Found" %}</div>
+                    <div class="alert alert-warning text-center">{% translate "No Fits Found" %}</div>
                 {% else %}
                     <table class="table table-striped table-hover dataTable" id="fitTable">
                         <thead>
