@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-20 18:54+0200\n"
+"POT-Creation-Date: 2023-04-20 19:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,10 +156,9 @@ msgid "Select Doctrine Icon"
 msgstr ""
 
 #: templates/fittings/add_doctrine.html:100
-#: templates/fittings/edit_doctrine.html:90
 msgid ""
 "If you do not see the ship type that you would like to use for the icon, add "
-"a fit that uses that ship type and try again."
+"a fitting that uses that ship type and try again."
 msgstr ""
 
 #: templates/fittings/add_doctrine.html:107 templates/fittings/add_fit.html:64
@@ -288,6 +287,12 @@ msgstr ""
 
 #: templates/fittings/edit_doctrine.html:85
 msgid "Current Icon"
+msgstr ""
+
+#: templates/fittings/edit_doctrine.html:90
+msgid ""
+"If you do not see the ship type that you would like to use for the icon, add "
+"a fit that uses that ship type and try again."
 msgstr ""
 
 #: templates/fittings/edit_fit.html:7 templates/fittings/edit_fit.html:29
