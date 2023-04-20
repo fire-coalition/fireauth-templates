@@ -60,7 +60,9 @@
                     <br>
 
                     {% if cat.groups.all|length != 0 %}
-                        {% for group in cat.groups.all %} <span class="label label-primary">{{group.name}}</span> {% endfor %}
+                        {% for group in cat.groups.all %}
+                            <span class="label label-primary">{{group.name}}</span>
+                        {% endfor %}
                     {% else %}
                         <span class="label label-warning">{% translate "Category is public" %}</span>
                     {% endif %}
@@ -92,7 +94,9 @@
                                 {% if not docs %}
                                     <tr>
                                         <td colspan="5">
-                                            <div class="alert alert-warning text-center"> {% translate "No Doctrines Found" %} </div>
+                                            <div class="alert alert-warning text-center">
+                                                {% translate "No Doctrines Found" %}
+                                            </div>
                                         </td>
                                     </tr>
                                 {% else %}
@@ -113,7 +117,9 @@
                                                     </span>
                                                 {% endfor %}
                                             </td>
-                                            <td> {{ doc.description|linebreaks|urlize }} </td>
+                                            <td>
+                                                {{ doc.description|linebreaks|urlize }}
+                                            </td>
                                             <td>
                                                 {% for fitting in doc_dict|get_item:doc.pk %}
                                                     <img src="{{ fitting.ship_type_type_id|type_render_url:32 }}" class="img-rounded" data-toggle="tooltip" data-placement="bottom" title="{{ fitting.ship_type.type_name }}" alt="{{ fitting.ship_type.type_name }}">
@@ -141,7 +147,9 @@
                                 {% if not fits %}
                                     <tr>
                                         <td colspan="4">
-                                            <div class="alert alert-warning text-center"> {% translate "No Fits Found" %} </div>
+                                            <div class="alert alert-warning text-center">
+                                                {% translate "No Fits Found" %}
+                                            </div>
                                         </td>
                                     </tr>
                                 {% else %}
@@ -156,7 +164,10 @@
                                                 {% endfor %}
                                             </td>
                                             <td>{{ fit.description|linebreaks|urlize }}</td>
-                                            <td><img class="img-rounded" src="{{ fit.ship_type_type_id|type_render_url:128 }}" style="height: 32px; width: 32px;" title="{{ fit.ship_type.type_name }}" alt="{{ fit.ship_type.type_name }}"> {{ fit.ship_type.type_name }}</td>
+                                            <td>
+                                                <img class="img-rounded" src="{{ fit.ship_type_type_id|type_render_url:128 }}" style="height: 32px; width: 32px;" title="{{ fit.ship_type.type_name }}" alt="{{ fit.ship_type.type_name }}">
+                                                {{ fit.ship_type.type_name }}
+                                            </td>
                                         </tr>
                                     {% endfor %}
                                 {% endif %}
@@ -187,8 +198,4 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-{% endblock %}
-
-{% block extra_script %}
-
 {% endblock %}

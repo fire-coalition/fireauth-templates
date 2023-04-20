@@ -61,10 +61,14 @@
                                         </a>
                                         {{ fit.ship_type.type_name }}
                                     </td>
-                                    <td><a href="{% url 'fittings:view_fit' fit.pk %}">{{ fit.name }}</a></td>
+                                    <td>
+                                        <a href="{% url 'fittings:view_fit' fit.pk %}">{{ fit.name }}</a>
+                                    </td>
                                     <td>
                                         {% for cat in cats|get_item:fit.pk %}
-                                        <span class="label" style="background-color: {{ cat.color }};"><a href="{% url 'fittings:view_category' cat.pk %}" class="nostyle">{{ cat.name }}</a></span>
+                                            <span class="label" style="background-color: {{ cat.color }};">
+                                                <a href="{% url 'fittings:view_category' cat.pk %}" class="nostyle">{{ cat.name }}</a>
+                                            </span>
                                         {% endfor %}
                                     </td>
                                     <td>{{ fit.description|linebreaks|urlize }}</td>
@@ -84,14 +88,14 @@
     <script>
         $(document).ready(function() {
             {% if fits %}
-                $('#fitTable').DataTable();
+                $('#fitTable').DataTable({
+                    language: {
+                        url: '{{ STATIC_URL }}/fireauth_templates/libs/DataTables-Plugins/1.13.4/i18n/{{ LANGUAGE_CODE }}.json'
+                    },
+                });
             {% endif %}
 
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-{% endblock %}
-
-{% block extra_script %}
-
 {% endblock %}
