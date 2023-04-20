@@ -256,6 +256,21 @@ SITE_NAME = "testauth"
 # useful error messages but can leak sensitive data.
 DEBUG = False
 
+if os.environ.get("USE_MYSQL", True) is True:
+    DATABASES["default"] = {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "tox_allianceauth",
+        "USER": os.environ.get("DB_USER", "user"),
+        "PASSWORD": os.environ.get("DB_PASSWORD", "password"),
+        "HOST": os.environ.get("DB_HOST", ""),
+        "PORT": os.environ.get("DB_PORT", ""),
+        "OPTIONS": {"charset": "utf8mb4"},
+        "TEST": {
+            "CHARSET": "utf8mb4",
+            "NAME": "test_tox_allianceauth",
+        },
+    }
+
 # Add any additional apps to this list.
 # FI.RE Auth Templates - https://github.com/fire-coalition/fireauth-templates
 INSTALLED_APPS.insert(0, "fireauth_templates")
