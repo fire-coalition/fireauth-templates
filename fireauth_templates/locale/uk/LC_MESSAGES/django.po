@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-20 19:35+0200\n"
+"POT-Creation-Date: 2023-04-20 20:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural= n==1 ? 3 : (n%10==1 && n%100!=11 ? 0 : "
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: templates/allianceauth/top-menu.html:9 templates/fittings/base.html:42
+#: templates/allianceauth/top-menu.html:9 templates/fittings/base.html:44
 msgid "Toggle navigation"
 msgstr ""
 
@@ -37,12 +37,12 @@ msgstr ""
 
 #: templates/blacklist/blacklist.html:23 templates/blacklist/evenotes.html:39
 #: templates/fittings/dashboard.html:46
-#: templates/fittings/view_all_categories.html:43
+#: templates/fittings/view_all_categories.html:44
 #: templates/fittings/view_all_fits.html:49
 #: templates/fittings/view_category.html:53
-#: templates/fittings/view_category.html:84
-#: templates/fittings/view_category.html:133
-#: templates/fittings/view_doctrine.html:91
+#: templates/fittings/view_category.html:86
+#: templates/fittings/view_category.html:139
+#: templates/fittings/view_doctrine.html:103
 msgid "Name"
 msgstr ""
 
@@ -51,8 +51,8 @@ msgid "Reason"
 msgstr ""
 
 #: templates/blacklist/blacklist.html:25 templates/blacklist/evenotes.html:44
-#: templates/fittings/base.html:65 templates/fittings/view_category.html:37
-#: templates/fittings/view_doctrine.html:92
+#: templates/fittings/base.html:77 templates/fittings/view_category.html:37
+#: templates/fittings/view_doctrine.html:104
 msgid "Category"
 msgstr ""
 
@@ -147,64 +147,72 @@ msgstr ""
 #: templates/fittings/create_category.html:74
 #: templates/fittings/edit_category.html:75
 #: templates/fittings/edit_doctrine.html:66
-msgid "Select Fits"
+msgid "Select Fittings"
 msgstr ""
 
-#: templates/fittings/add_doctrine.html:89
+#: templates/fittings/add_doctrine.html:91
 #: templates/fittings/edit_doctrine.html:81
 msgid "Select Doctrine Icon"
 msgstr ""
 
-#: templates/fittings/add_doctrine.html:100
-#: templates/fittings/edit_doctrine.html:90
+#: templates/fittings/add_doctrine.html:104
+#: templates/fittings/edit_doctrine.html:92
 msgid ""
 "If you do not see the ship type that you would like to use for the icon, add "
 "a fitting that uses that ship type and try again."
 msgstr ""
 
-#: templates/fittings/add_doctrine.html:107 templates/fittings/add_fit.html:64
+#: templates/fittings/add_doctrine.html:111 templates/fittings/add_fit.html:64
 #: templates/fittings/create_category.html:98
 #: templates/fittings/edit_category.html:99
-#: templates/fittings/edit_doctrine.html:95 templates/fittings/edit_fit.html:56
+#: templates/fittings/edit_doctrine.html:98 templates/fittings/edit_fit.html:56
 msgid "Submit"
 msgstr ""
 
-#: templates/fittings/add_fit.html:7
-msgid "Add Fit"
+#: templates/fittings/add_doctrine.html:126
+#: templates/fittings/create_category.html:124
+#: templates/fittings/create_category.html:132
+#: templates/fittings/create_category.html:140
+#: templates/fittings/edit_doctrine.html:112
+msgid "Search"
 msgstr ""
 
-#: templates/fittings/add_fit.html:33
+#: templates/fittings/add_fit.html:7 templates/fittings/add_fit.html:33
 msgid "Add Fitting"
 msgstr ""
 
 #: templates/fittings/add_fit.html:44 templates/fittings/dashboard.html:48
 #: templates/fittings/edit_fit.html:39 templates/fittings/view_all_fits.html:51
-#: templates/fittings/view_category.html:86
-#: templates/fittings/view_category.html:135
+#: templates/fittings/view_category.html:88
+#: templates/fittings/view_category.html:141
 #: templates/fittings/view_doctrine.html:64
-#: templates/fittings/view_doctrine.html:93
+#: templates/fittings/view_doctrine.html:105
 msgid "Description"
 msgstr ""
 
-#: templates/fittings/add_fit.html:55 templates/fittings/base.html:63
-#: templates/fittings/view_fit.html:116
+#: templates/fittings/add_fit.html:55 templates/fittings/base.html:75
+#: templates/fittings/edit_fit.html:48 templates/fittings/view_fit.html:135
 msgid "Fitting"
 msgstr ""
 
-#: templates/fittings/base.html:48
+#: templates/fittings/base.html:50
 msgid "Fittings and Doctrines"
 msgstr ""
 
-#: templates/fittings/base.html:52 templates/fittings/view_all_fits.html:8
-msgid "View All Fits"
+#: templates/fittings/base.html:56
+msgid "View All Doctrines"
 msgstr ""
 
-#: templates/fittings/base.html:53
+#: templates/fittings/base.html:60 templates/fittings/view_all_fits.html:8
+msgid "View All Fittings"
+msgstr ""
+
+#: templates/fittings/base.html:64
 #: templates/fittings/view_all_categories.html:8
 msgid "View All Categories"
 msgstr ""
 
-#: templates/fittings/base.html:64 templates/fittings/view_doctrine.html:7
+#: templates/fittings/base.html:76 templates/fittings/view_doctrine.html:7
 msgid "Doctrine"
 msgstr ""
 
@@ -244,6 +252,18 @@ msgstr ""
 msgid "Select Doctrines"
 msgstr ""
 
+#: templates/fittings/create_category.html:122
+#: templates/fittings/create_category.html:130
+#: templates/fittings/create_category.html:138
+msgid "Select Value"
+msgstr ""
+
+#: templates/fittings/create_category.html:123
+#: templates/fittings/create_category.html:131
+#: templates/fittings/create_category.html:139
+msgid "No Results"
+msgstr ""
+
 #: templates/fittings/dashboard.html:8
 msgid "Dashboard"
 msgstr ""
@@ -253,30 +273,30 @@ msgid "Doctrine List"
 msgstr ""
 
 #: templates/fittings/dashboard.html:35
-#: templates/fittings/view_category.html:74 templates/fittings/view_fit.html:96
+#: templates/fittings/view_category.html:76 templates/fittings/view_fit.html:97
 msgid "Doctrines"
 msgstr ""
 
 #: templates/fittings/dashboard.html:40
-#: templates/fittings/view_category.html:95
+#: templates/fittings/view_category.html:98
 msgid "No Doctrines Found"
 msgstr ""
 
 #: templates/fittings/dashboard.html:47
 #: templates/fittings/view_all_fits.html:50
-#: templates/fittings/view_category.html:85
-#: templates/fittings/view_category.html:134
+#: templates/fittings/view_category.html:87
+#: templates/fittings/view_category.html:140
 msgid "Categories"
 msgstr ""
 
 #: templates/fittings/dashboard.html:49
-#: templates/fittings/view_category.html:87
+#: templates/fittings/view_category.html:89
 msgid "Ships"
 msgstr ""
 
 #: templates/fittings/edit_category.html:22
 #: templates/fittings/edit_category.html:28
-#: templates/fittings/view_all_categories.html:64
+#: templates/fittings/view_all_categories.html:67
 #: templates/fittings/view_category.html:41
 msgid "Edit Category"
 msgstr ""
@@ -294,64 +314,61 @@ msgstr ""
 msgid "Update Fitting"
 msgstr ""
 
-#: templates/fittings/edit_fit.html:48 templates/fittings/view_fit.html:8
-msgid "Fit"
-msgstr ""
-
 #: templates/fittings/view_all_categories.html:29
 msgid "Category List"
 msgstr ""
 
 #: templates/fittings/view_all_categories.html:34
 #: templates/fittings/view_all_fits.html:38
-msgid "Fits"
+#: templates/fittings/view_category.html:77
+msgid "Fittings"
 msgstr ""
 
 #: templates/fittings/view_all_categories.html:39
 msgid "No Categories Found"
 msgstr ""
 
-#: templates/fittings/view_all_categories.html:44
+#: templates/fittings/view_all_categories.html:45
 msgid "Doctrines Assigned"
 msgstr ""
 
-#: templates/fittings/view_all_categories.html:45
+#: templates/fittings/view_all_categories.html:46
 msgid "Fittings Assigned"
 msgstr ""
 
-#: templates/fittings/view_all_categories.html:47
+#: templates/fittings/view_all_categories.html:49
 msgid "Groups Assigned"
 msgstr ""
 
-#: templates/fittings/view_all_categories.html:61
+#: templates/fittings/view_all_categories.html:64
 #: templates/fittings/view_category.html:30
 msgid "View Category"
 msgstr ""
 
-#: templates/fittings/view_all_categories.html:67
+#: templates/fittings/view_all_categories.html:70
 #: templates/fittings/view_category.html:44
 msgid "Delete Category"
 msgstr ""
 
-#: templates/fittings/view_all_categories.html:79
+#: templates/fittings/view_all_categories.html:82
 msgid ""
-"*Note: Fit counts may be inaccurate as fits marked independently of "
+"*Note: Fitting counts may be inaccurate as fittings marked independently of "
 "doctrines may be counted more than once."
 msgstr ""
 
 #: templates/fittings/view_all_fits.html:33
-msgid "Fit List"
+msgid "Fittings List"
 msgstr ""
 
 #: templates/fittings/view_all_fits.html:43
-#: templates/fittings/view_category.html:144
-#: templates/fittings/view_doctrine.html:85
-msgid "No Fits Found"
+#: templates/fittings/view_category.html:151
+#: templates/fittings/view_doctrine.html:97
+msgid "No Fittings Found"
 msgstr ""
 
 #: templates/fittings/view_all_fits.html:48
-#: templates/fittings/view_category.html:136
-#: templates/fittings/view_doctrine.html:90
+#: templates/fittings/view_category.html:142
+#: templates/fittings/view_doctrine.html:102
 msgid "Ship Type"
 msgstr ""
 
@@ -359,12 +376,8 @@ msgstr ""
 msgid "Groups"
 msgstr ""
 
-#: templates/fittings/view_category.html:65
+#: templates/fittings/view_category.html:67
 msgid "Category is public"
-msgstr ""
-
-#: templates/fittings/view_category.html:75
-msgid "Fittings"
 msgstr ""
 
 #: templates/fittings/view_doctrine.html:16 templates/fittings/view_fit.html:20
@@ -395,16 +408,22 @@ msgstr ""
 msgid "Delete Doctrine"
 msgstr ""
 
-#: templates/fittings/view_doctrine.html:66
+#: templates/fittings/view_doctrine.html:68
+#: templates/fittings/view_fit.html:112
 msgid "Created"
 msgstr ""
 
-#: templates/fittings/view_doctrine.html:69
+#: templates/fittings/view_doctrine.html:77
+#: templates/fittings/view_fit.html:121
 msgid "Last Updated"
 msgstr ""
 
-#: templates/fittings/view_doctrine.html:80
-msgid "Doctrine Fits"
+#: templates/fittings/view_doctrine.html:92
+msgid "Doctrine Fittings"
+msgstr ""
+
+#: templates/fittings/view_fit.html:8
+msgid "Fit"
 msgstr ""
 
 #: templates/fittings/view_fit.html:25
@@ -415,99 +434,99 @@ msgstr ""
 msgid "EFT Formatted Fitting"
 msgstr ""
 
-#: templates/fittings/view_fit.html:64
+#: templates/fittings/view_fit.html:65
 msgid "Close"
 msgstr ""
 
-#: templates/fittings/view_fit.html:78
+#: templates/fittings/view_fit.html:79
 msgid "Fit Information"
 msgstr ""
 
-#: templates/fittings/view_fit.html:82
+#: templates/fittings/view_fit.html:83
 msgid "Delete Fit"
 msgstr ""
 
-#: templates/fittings/view_fit.html:87
+#: templates/fittings/view_fit.html:88
 msgid "Edit/Update Fit"
 msgstr ""
 
-#: templates/fittings/view_fit.html:372 templates/fittings/view_fit.html:423
+#: templates/fittings/view_fit.html:391 templates/fittings/view_fit.html:442
 msgid "Hull"
 msgstr ""
 
-#: templates/fittings/view_fit.html:383
+#: templates/fittings/view_fit.html:402
 msgid "Fitting Notes"
 msgstr ""
 
-#: templates/fittings/view_fit.html:401
+#: templates/fittings/view_fit.html:420
 msgid "Fitting Details"
 msgstr ""
 
-#: templates/fittings/view_fit.html:405
+#: templates/fittings/view_fit.html:424
 msgid "Save to EVE"
 msgstr ""
 
-#: templates/fittings/view_fit.html:409
+#: templates/fittings/view_fit.html:428
 msgid "Copy Buy All"
 msgstr ""
 
-#: templates/fittings/view_fit.html:413
+#: templates/fittings/view_fit.html:432
 msgid "Copy Fit (EFT)"
 msgstr ""
 
-#: templates/fittings/view_fit.html:433
+#: templates/fittings/view_fit.html:452
 msgid "SubSystems"
 msgstr ""
 
-#: templates/fittings/view_fit.html:458
+#: templates/fittings/view_fit.html:477
 msgid "High Slots"
 msgstr ""
 
-#: templates/fittings/view_fit.html:463
+#: templates/fittings/view_fit.html:482
 msgid "No High Slot Items"
 msgstr ""
 
-#: templates/fittings/view_fit.html:524
+#: templates/fittings/view_fit.html:543
 msgid "Medium Slots"
 msgstr ""
 
-#: templates/fittings/view_fit.html:529
+#: templates/fittings/view_fit.html:548
 msgid "No Medium Slot Items"
 msgstr ""
 
-#: templates/fittings/view_fit.html:590
+#: templates/fittings/view_fit.html:609
 msgid "Low Slots"
 msgstr ""
 
-#: templates/fittings/view_fit.html:595
+#: templates/fittings/view_fit.html:614
 msgid "No Low Slot Items"
 msgstr ""
 
-#: templates/fittings/view_fit.html:656
+#: templates/fittings/view_fit.html:675
 msgid "Rig Slots"
 msgstr ""
 
-#: templates/fittings/view_fit.html:661
+#: templates/fittings/view_fit.html:680
 msgid "No Rig Slot Items"
 msgstr ""
 
-#: templates/fittings/view_fit.html:688
+#: templates/fittings/view_fit.html:707
 msgid "Service Slots"
 msgstr ""
 
-#: templates/fittings/view_fit.html:750
+#: templates/fittings/view_fit.html:769
 msgid "Fighter Tubes"
 msgstr ""
 
-#: templates/fittings/view_fit.html:791
+#: templates/fittings/view_fit.html:810
 msgid "Cargo Bay"
 msgstr ""
 
-#: templates/fittings/view_fit.html:804
+#: templates/fittings/view_fit.html:823
 msgid "Drone Bay"
 msgstr ""
 
-#: templates/fittings/view_fit.html:817
+#: templates/fittings/view_fit.html:836
 msgid "Fighter Bay"
 msgstr ""
 

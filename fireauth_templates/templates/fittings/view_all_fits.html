@@ -5,7 +5,7 @@
 {% load filters %}
 {% load evelinks %}
 
-{% block page_title %}{% translate "View All Fits" %}{% endblock %}
+{% block page_title %}{% translate "View All Fittings" %}{% endblock %}
 
 {% block fittings_block %}
     {% if msg %}
@@ -30,17 +30,17 @@
 
     <div>
         <h2>
-            {% translate "Fit List" %}
+            {% translate "Fittings List" %}
         </h2>
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <div class="panel-title">{% translate "Fits" %}</div>
+                <div class="panel-title">{% translate "Fittings" %}</div>
             </div>
 
             <div class="panel-body">
                 {% if not fits %}
-                    <div class="alert alert-warning text-center">{% translate "No Fits Found" %}</div>
+                    <div class="alert alert-warning text-center">{% translate "No Fittings Found" %}</div>
                 {% else %}
                     <table class="table table-striped table-hover dataTable" id="fitTable">
                         <thead>
@@ -61,10 +61,14 @@
                                         </a>
                                         {{ fit.ship_type.type_name }}
                                     </td>
-                                    <td><a href="{% url 'fittings:view_fit' fit.pk %}">{{ fit.name }}</a></td>
+                                    <td>
+                                        <a href="{% url 'fittings:view_fit' fit.pk %}">{{ fit.name }}</a>
+                                    </td>
                                     <td>
                                         {% for cat in cats|get_item:fit.pk %}
-                                        <span class="label" style="background-color: {{ cat.color }};"><a href="{% url 'fittings:view_category' cat.pk %}" class="nostyle">{{ cat.name }}</a></span>
+                                            <span class="label" style="background-color: {{ cat.color }};">
+                                                <a href="{% url 'fittings:view_category' cat.pk %}" class="nostyle">{{ cat.name }}</a>
+                                            </span>
                                         {% endfor %}
                                     </td>
                                     <td>{{ fit.description|linebreaks|urlize }}</td>
@@ -84,14 +88,14 @@
     <script>
         $(document).ready(function() {
             {% if fits %}
-                $('#fitTable').DataTable();
+                $('#fitTable').DataTable({
+                    language: {
+                        url: '{{ STATIC_URL }}/fireauth_templates/libs/DataTables-Plugins/1.13.4/i18n/{{ LANGUAGE_CODE }}.json'
+                    },
+                });
             {% endif %}
 
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-{% endblock %}
-
-{% block extra_script %}
-
 {% endblock %}

@@ -56,7 +56,8 @@
                     <label for="eft-fitting" style="margin-bottom: 1rem;">
                         {% translate "EFT Formatted Fitting" %}
                     </label>
-                    <textarea id="eft-fitting" style="width: 100%; height: 100%;" rows="25" onclick="this.select()">{{ fit.eft }}</textarea>
+
+                    <textarea id="eft-fitting" style="width: 100%; height: 100%;" rows="25" onclick="this.select()" readonly>{{ fit.eft }}</textarea>
                 </div>
 
                 <div class="modal-footer">
@@ -106,6 +107,24 @@
                             </ul>
                         </dd>
                     </dl>
+
+                    {% if fit.created %}
+                        <dt>{% translate "Created" %}</dt>
+                        {% if LANGUAGE_CODE == 'ko' or LANGUAGE_CODE == 'ja' %}
+                            <dd>{{ fit.created|date:'Y-m-d / H:i:s' }}</dd>
+                        {% else %}
+                            <dd>{{ fit.created|date:'d M Y H:i:s' }}</dd>
+                        {% endif %}
+                    {% endif %}
+
+                    {% if fit.last_updated %}
+                        <dt>{% translate "Last Updated" %}</dt>
+                        {% if LANGUAGE_CODE == 'ko' or LANGUAGE_CODE == 'ja' %}
+                            <dd>{{ fit.last_updated|date:'Y-m-d / H:i:s' }}</dd>
+                        {% else %}
+                            <dd>{{ fit.last_updated|date:'d M Y H:i:s' }}</dd>
+                        {% endif %}
+                    {% endif %}
                 </div>
             </div>
         </div>
