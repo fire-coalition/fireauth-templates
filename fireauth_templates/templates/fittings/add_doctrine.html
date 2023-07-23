@@ -119,8 +119,8 @@
 {% endblock %}
 
 {% block extra_javascript %}
-    {%  include "fireauth/bundles/multiselect-js.html" %}
-    {%  include "fireauth/bundles/quicksearch-js.html" %}
+    {% include 'fittings/bundles/multi-select-js.html' %}
+    {% include 'fittings/bundles/jquery.quicksearch-js.html' %}
 
     <script>
         const translation_search = '{% translate "Search" %}';
