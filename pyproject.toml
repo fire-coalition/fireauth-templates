@@ -1,23 +1,25 @@
 [build-system]
-requires = ["hatchling"]
 build-backend = "hatchling.build"
+requires = [
+    "hatchling",
+]
 
 [project]
 name = "fireauth-templates"
 version = "0.0.1"
 description = "Alliance Auth Template Overrides for FI.RE Coalition"
 readme = "README.md"
-license = {file = "LICENSE"}
-requires-python = "~=3.8"
-authors = [
-    { name = "Peter Pfeufer", email = "develop@ppfeufer.de" },
-]
 keywords = [
     "allianceauth",
     "eveonline",
     "template",
     "template_override",
 ]
+license = {file = "LICENSE"}
+authors = [
+    { name = "Peter Pfeufer", email = "develop@ppfeufer.de" },
+]
+requires-python = "~=3.8"
 classifiers = [
     "Environment :: Web Environment",
     "Framework :: Django",
@@ -26,7 +28,7 @@ classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -35,9 +37,8 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
 ]
 dependencies = [
-    "allianceauth>=3.3.0",
+    "allianceauth>=3.3",
 ]
-
 [project.urls]
 Changelog = "https://github.com/fire-coalition/fireauth-templates/blob/master/CHANGELOG.md"
 "Issue / Bug Reports" = "https://github.com/fire-coalition/fireauth-templates/issues"
