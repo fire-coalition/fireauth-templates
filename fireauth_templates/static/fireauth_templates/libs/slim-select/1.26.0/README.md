@@ -1,5 +1,7 @@
 # Slim Select
+
 ## slimselectjs.com
+
 Slim advanced select dropdown
 
 [![Build Status](https://travis-ci.org/brianvoe/slim-select.svg?branch=master)](https://travis-ci.org/brianvoe/slim-select)
@@ -12,6 +14,7 @@ For documentation and examples on all features see: http://slimselectjs.com
 ![](https://raw.githubusercontent.com/brianvoe/slim-select/master/slimselect.gif)
 
 ## Features
+
 - No Dependencies
 - 20kb - 5kb gzip
 - Single Select
@@ -30,6 +33,7 @@ For documentation and examples on all features see: http://slimselectjs.com
 - Performant
 
 ## Browsers
+
 - IE 11+
 - Edge 13+
 - Chrome 30+
@@ -38,6 +42,7 @@ For documentation and examples on all features see: http://slimselectjs.com
 - Safari 9+
 
 ## Installation
+
 ```bash
 npm install slim-select
 ```
@@ -50,6 +55,7 @@ npm install slim-select
 ```
 
 ## Usage
+
 ```javascript
 import SlimSelect from 'slim-select'
 
@@ -59,6 +65,7 @@ new SlimSelect({
 ```
 
 ## Testing
+
 Browser testing has been provided by
 
 <img src="https://digitalscientists.com/system/images/1448/original/logo-browserstack.png" width="300" />

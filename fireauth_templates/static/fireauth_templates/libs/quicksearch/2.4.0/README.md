@@ -7,24 +7,26 @@ This plugin is now maintained by [@DeuxHuitHuit][288]
 
 ## Project pages
 
-* <https://deuxhuithuit.github.io/quicksearch/>
-* <https://www.npmjs.org/package/jquery.quicksearch/>
-* <https://plugins.jquery.com/jquery.quicksearch/>
+- <https://deuxhuithuit.github.io/quicksearch/>
+- <https://www.npmjs.org/package/jquery.quicksearch/>
+- <https://plugins.jquery.com/jquery.quicksearch/>
 
 ## Examples
 
-* <https://deuxhuithuit.github.io/quicksearch/r/examples/>
-* <https://deuxhuithuit.github.io/quicksearch/r/examples/super_table.html>
+- <https://deuxhuithuit.github.io/quicksearch/r/examples/>
+- <https://deuxhuithuit.github.io/quicksearch/r/examples/super_table.html>
 
 ## Usage
 
 Note that the usage has changed in the latest version of quicksearch, the code is *not* backwards compatible,
 the form and input are not build by the script any more.
+
 ```js
 $(input_selector).quicksearch(elements_to_search, options);
 ```
 
 #### Example on table rows
+
 ```html
 /* Example form */
 <form>
@@ -49,18 +51,23 @@ $(input_selector).quicksearch(elements_to_search, options);
 ```
 
 #### Example on the `<th>` elements on a table row
+
 ```js
 $('input#search').quicksearch('table tbody tr', {
 	selector: 'th'
 });
 ```
+
 #### Example of how to use with JS
+
 ```js
 var qs = $('input#id_search_list').quicksearch('ul#list_example li');
 $('ul#list_example').append('<li>Loaded with Ajax</li>');
 qs.cache();
 ```
+
 #### Example of how to use with Ajax
+
 ```js
 var qs = $('input#search').quicksearch('table tbody tr');
 $.ajax({
@@ -75,51 +82,53 @@ $.ajax({
 
 ## Options
 
-* 	**delay**
-	Delay of trigger in milliseconds
-*	**selector**
-	A query selector on sibling elements to test
-*	**stripeRows**
-	An array of class names to go on each row
-*	**loader**
-	A query selector to find a loading element
-*	**caseSensitive**
-	Maintain original case of searchable content when comparing to query, instead of converting to lowercase. Defaults to false.
-*	**noResults**
-	A query selector to show if there's no results for the search
-*	**bind**
-	Event that the trigger is tied to. Defaults to 'keyup search'
-*	**resetBind**
-	Event that the reset event is tied to. Defaults to 'reset'
-*	**removeDiacritics**
-	Remove diacritics from the search input. Defaults to false.
-*	**minValLength**
-	Establish a minimum length that the search value must have in order to perform the search. Defaults to 0.
-*	**onBefore**
-	Function to call before trigger is called
-*	**onAfter**
-	Function to call after trigger is called
-*	**onValTooSmall**
-	Function to call when the value does not exceeds the `minValLength` option.
-*	**onNoResultFound**
-	Function to call when no results are found. The normal behavior (show the no result panel) is canceled when you specify this parameter. You get the quicksearch instance in parameter so you can manually call the no result behavior.
-*	**show**
-	Function that will add styles to matched elements
-*	**hide**
-	Function that will add styles to unmatched elements
-*	**prepareQuery**
-	Function that transforms text from input_selector into query used by 'testQuery' function
-*	**testQuery**
-	Function that tells if a given item should be hidden
-	It takes 3 arguments:
-	- query prepared by 'prepareQuery'
-	- stripped text from 'selector'
-	- element to be potentially hidden
+- **delay**
+  Delay of trigger in milliseconds
+- **selector**
+  A query selector on sibling elements to test
+- **stripeRows**
+  An array of class names to go on each row
+- **loader**
+  A query selector to find a loading element
+- **caseSensitive**
+  Maintain original case of searchable content when comparing to query, instead of converting to lowercase. Defaults to false.
+- **noResults**
+  A query selector to show if there's no results for the search
+- **bind**
+  Event that the trigger is tied to. Defaults to 'keyup search'
+- **resetBind**
+  Event that the reset event is tied to. Defaults to 'reset'
+- **removeDiacritics**
+  Remove diacritics from the search input. Defaults to false.
+- **minValLength**
+  Establish a minimum length that the search value must have in order to perform the search. Defaults to 0.
+- **onBefore**
+  Function to call before trigger is called
+- **onAfter**
+  Function to call after trigger is called
+- **onValTooSmall**
+  Function to call when the value does not exceeds the `minValLength` option.
+- **onNoResultFound**
+  Function to call when no results are found. The normal behavior (show the no result panel) is canceled when you specify this parameter. You get the quicksearch instance in parameter so you can manually call the no result behavior.
+- **show**
+  Function that will add styles to matched elements
+- **hide**
+  Function that will add styles to unmatched elements
+- **prepareQuery**
+  Function that transforms text from input_selector into query used by 'testQuery' function
+- **testQuery**
+  Function that tells if a given item should be hidden
+  It takes 3 arguments:
+  - query prepared by 'prepareQuery'
+  - stripped text from 'selector'
+  - element to be potentially hidden
 
 ### Callbacks
+
 Functions are always `call`'d or `apply`'d, so except `this` to be the plugin object.
 
 For example:
+
 ```js
 $('input#search').quicksearch('table tbody tr', {
 	'delay': 100,
@@ -158,12 +167,12 @@ $('input#search').quicksearch('table tbody tr', {
 
 If you have a bug fix, the best way to help would be to:
 
-* Fork the project by clicking "Fork this project" at the top of this page
-* Clone your version of quicksearch from your Github account to your computer
-* Checkout the `dev` branch
-* Fix and commit the bugs, then push your version to your Github account
-* Click "pull request" at the top of my Github page
-* Please create the "Pull Request" to push in the `branch`
+- Fork the project by clicking "Fork this project" at the top of this page
+- Clone your version of quicksearch from your Github account to your computer
+- Checkout the `dev` branch
+- Fix and commit the bugs, then push your version to your Github account
+- Click "pull request" at the top of my Github page
+- Please create the "Pull Request" to push in the `branch`
 
 I can't promise to answer every question about quicksearch,
 but please do [report bugs here][issues].
@@ -179,10 +188,10 @@ It is now maintain by [Deux Huit Huit][288]
 
 Thanks to [Seth F.][thelizardreborn] for fixes and [Krzysiek Goj][goj] for the testQuery and prepareQuery option updates
 
-[jquery_site]: http://www.jquery.com
-[rik_site]: http://www.riklomas.co.uk
-[lomalogue_site]: http://www.lomalogue.com
-[issues]: https://github.com/deuxhuithuit/quicksearch/issues
-[thelizardreborn]: https://github.com/thelizardreborn
-[goj]: https://github.com/goj
 [288]: https://deuxhuithuit.com/
+[goj]: https://github.com/goj
+[issues]: https://github.com/deuxhuithuit/quicksearch/issues
+[jquery_site]: http://www.jquery.com
+[lomalogue_site]: http://www.lomalogue.com
+[rik_site]: http://www.riklomas.co.uk
+[thelizardreborn]: https://github.com/thelizardreborn

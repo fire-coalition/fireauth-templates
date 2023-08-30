@@ -2,5 +2,10 @@
 FI.RE Coalition Auth Templates init
 """
 
-__version__ = "0.0.1"
+# Standard Library
+from importlib import metadata
+
+__version__ = metadata.version("fireauth-templates")
 __title__ = "Alliance Auth Template Overrides"
+
+del metadata
