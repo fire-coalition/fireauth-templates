@@ -6,7 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
-## In Development
+## \[In Development\] - Unreleased
+
+### Changed
+
+- Moved the build process to PEP 621 / pyproject.toml
+
+## \[0.0.1\] - 2023-02-28
 
 ### Added
 
