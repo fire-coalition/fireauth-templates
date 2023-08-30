@@ -6,7 +6,7 @@ requires = [
 
 [project]
 name = "fireauth-templates"
-version = "0.0.1"
+version = "0.0.2"
 description = "Alliance Auth Template Overrides for FI.RE Coalition"
 readme = "README.md"
 keywords = [
