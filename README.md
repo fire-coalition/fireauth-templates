@@ -1,3 +1,1 @@
-# fireauth-templates
-
-FI.RE Coalition Auth Templates
+# FI.RE Coalition Auth Templates
